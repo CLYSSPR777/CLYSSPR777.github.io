@@ -1116,10 +1116,9 @@ figure {
 }
 img {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 0;
+    height: 0;
     min-width: 0;
-    margin-right: 10px;
 }
 img_icon {
     width: 50px;
