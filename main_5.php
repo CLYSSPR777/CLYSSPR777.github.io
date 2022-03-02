@@ -40,10 +40,82 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body style="padding-top: 70px" onLoad="MM_preloadImages('images/Photo_Designer.jpg')">
+<body style="padding-top: 70px">
+	<?php
+	$ConChecking = @mysql_connect("localhost", "root", "SPR77745") or die("連結失敗");
+	$DB_mysql_select = @mysql_select_db("clysspr777_db")or die("無此資料庫");
+	
+	$DB_Insert = "insert into user_suggest(name, email, suggestion, number) value('user_Name', 'user_Email', 'user_Suggestion', '')";
+		
+	mysql_query($DB_Insert);
+	mysql_close($ConChecking);
+	/*
+	if($ConChecking){
+		echo "連結成功";
+	} else {
+		echo "連結失敗";
+	}
+	*/
+	?>
 <div class="container-fluid">
 	<h5 class="text-capitalize text-right">Designer: Christopher Ling</h5>
 	<hr>
+  <section class="p-3">
+				      <div class="row">
+        <div class="col-md-12">
+          <div class="list-group"><a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">Contact me</h4>
+          </a><a href="#" class="list-group-item">
+          <p class="list-group-item-text">&nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d857.3445560137856!2d111.8534310322019!3d2.245691376196222!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnNDUuNSJOIDExMcKwNTEnMTIuNSJF!5e1!3m2!1szh-TW!2stw!4v1516310360561" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+			  
+          </a>
+          <div class="list-group"><a href="#" class="list-group-item active">
+			  <h4 class="list-group-item-heading">
+				  Adress: 96000 No:5B, Jalan Lada 8A/4, Sibu, Sarawak,Malaysia<br>
+				  Mail: clys129@gmail.com<br>
+				  Tel: 0905-725-941
+			  </h4>
+          </a><a href="#" class="list-group-item">
+			  
+			  <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+			<h2 class="text-center mt-1"><strong>改善建議</strong></h2>
+		  <form>
+			  <div class = "row form-group">
+				  <lable>姓名</lable>
+				  <input type="text" id="FormName" placeholder="請輸入您的姓名" class="form-control is-valid" required>
+			  </div>
+			  <div class = "row form-group">
+				  <lable>電子信箱</lable>
+				  <input type="text" id="FormEmail" placeholder="請輸入您的電子信箱" class="form-control is-valid" required>
+			  </div>
+			  <div class = "row form-group">
+				  <lable>改善建議</lable>
+				  <textarea id="FormRecommend" placeholder="請輸入您寶貴的意見" class="form-control is-valid" required row="3"></textarea>
+			  </div>
+			  <div class = "row form-group">
+				  <button type="reset" class="btn btn-defalut floa">清除</button>
+				  <button type="submit" class="btn btn-success float-right">送出</button>
+			  </div>
+		  </form>
+	  </div>
+				  <div class="col-12 col-md-4 mt-70">
+			 <strong> 公司</strong>：長榮大學 Chang Jung Christian University<br>
+			   <strong>地址</strong>: 71101 台南市歸仁區長大路一號<br>
+			   <strong>電話</strong>: (06)2785123<br>
+          <strong>網站管理員</strong>: webinfo@cjcu.edu.tw<br>
+		  </div>
+    </div>
+  </div>
+</section>
+            
+</a></div>
+          </div>
+        </div>
+</div>
+	</section>
 <header>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -84,32 +156,6 @@ function MM_swapImage() { //v3.0
     <!-- /.container-fluid -->
   </nav>
 </header>
-	<div class="container-fluid">
-      <div class="row">
-		<h2 class="panel-primary alert-info ">數位內容設計學系 長大營隊活動 聖誕工作坊 互動裝置設計</h2>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-6"><img src="images/PD_03.jpg" alt="" width="957" height="718" class="img-responsive"/></div>
-            <div class="col-md-6"><img src="images/PD_04.jpg" alt="" width="4160" height="3120" class="img-responsive"/></div>
-            <div class="col-md-12"><img src="images/PD_01.jpg" alt="" width="960" height="540" class="img-responsive"/></div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h4 class="pic8">每年的聖誕節，學校都會舉辦這個聖誕點燈禮拜，國民106年，創新育成中心聖誕帶領了我們數位內容設計學系2A班的同學們，利用學系必修的服務學習的課堂及課餘時間，來製作創意的互動裝置設計。雖然前期我們總是迷迷糊糊，但越接近點燈，我們的也就1越有精神。2個月的大型互動設計，在106年11月30日順利且完美的舉辦。</h4>
-			<h3 class="panel-primary alert-info ">其他鏈接新聞</h3>
-			<a href="https://www.cjcu.edu.tw/news-detail.php?id=FC,106120021" target="_blank">2017 長榮大學聖誕點燈 帶領大家看見主耶穌誕生的「真光」</a> <br>
-			<a href="https://dweb.cjcu.edu.tw/dcd/article/1165" target="_blank">2017長榮大學聖誕節點燈活動影片</a> <br>
-			<a href="http://www.taiwanhot.net/?p=522586" target="_blank">台灣好新聞 - 聖誕點燈　長榮大學校園濃濃耶誕氣息</a> <br>
-			<a href="https://travel.ettoday.net/article/1066165.html" target="_blank">漫步聖誕氛圍大學校園！2017全台大學聖誕樹點燈蒐集</a>
-        </div>
-        <div class="col-md-4">
-			<h2 class="panel-primary alert-info ">影片欣賞</h2>
-        </div>
-        <div class="col-md-4">&nbsp;</div>
-		  <iframe width="328" height="315" src="https://www.youtube.com/embed/8sgjTbWG5FY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        &nbsp;</div>
-
-    </div>
 	
 </div>
 

@@ -7,8 +7,8 @@
 
 <body>
 	<?php
-	$ConChecking = @mysql_connect("localhost", "root", "123456789") or die("連結失敗");
-	$DB_mysql_select = @mysql_select_db("clysspr777_database")or die("無此資料庫");
+	$ConChecking = @mysql_connect("localhost", "root", "SPR77745") or die("連結失敗");
+	$DB_mysql_select = @mysql_select_db("clysspr777_db")or die("無此資料庫");
 	
 	$DB_Insert = "insert into user_suggest(name, email, suggestion, number) value('user_Name', 'user_Email', 'user_Suggestion', '')";
 		
